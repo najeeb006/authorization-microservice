@@ -1,0 +1,11 @@
+version: 1.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "arn:aws:ecs:us-east-1:555918697305:task-definition/microservices:1"
+        LoadBalancerInfo:
+          ContainerName: "authorization-microservice"
+          ContainerPort: "80"
+
+        PlatformVersion: "LATEST"
