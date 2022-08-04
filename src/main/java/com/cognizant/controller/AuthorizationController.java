@@ -47,7 +47,7 @@ public class AuthorizationController {
 	public ResponseEntity<String> welcome() {
 		LOGGER.info("STARTED authorization microservice welcome");
 		LOGGER.info("END - authorization microservice welcome");
-		return ResponseEntity.ok("Welcome to security application");
+		return ResponseEntity.ok("Welcome to security application V2");
 	}
 
 
